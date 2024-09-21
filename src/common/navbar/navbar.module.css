@@ -1,0 +1,19 @@
+.navbarContainer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 1rem;
+  border-radius: 30px;
+}
+.navbarTitle {
+  font-size: 25px;
+}
+
+.navbarImg {
+  width: 2.5rem;
+}
