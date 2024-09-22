@@ -4,6 +4,8 @@ import Home from "./page/home/Home.jsx";
 import App from "./App.jsx";
 import "./index.css";
 
+const API = import.meta.env.API_KEY;
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,7 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        // loader: async () => fetch(`${URL}/api/films`),
+        loader: async () =>
+          fetch(
+            `https://api.thecatapi.com/v1/images/search?limit=10&api_key=${API}`
+          ),
       },
       // { path: "/inscription", element: <Inscription /> },
       // { path: "/connection", element: <Connection /> },
@@ -22,5 +27,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />,
+  <RouterProvider router={router} />
 );
