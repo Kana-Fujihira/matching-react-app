@@ -8,8 +8,10 @@ import styles from "../card/card.module.css";
 function Card() {
   // Initialize state as an empty object to track favorite status for each cat
   const [favorites, setFavorites] = useState({});
+
   // Initialize state for storing random names for each cat
   const [catNames, setCatNames] = useState({});
+
   // Toggle favorite status for a specific cat by its id
   const handleFavorite = (catId) => {
     setFavorites((prevFavorites) => ({
@@ -23,13 +25,14 @@ function Card() {
   return (
     <>
       {allCats.map((cat) => {
-        // Generate a random name for each cat
+        // Generate a random name for each cat , this function avoid the changing cat name each time user tap the favorite button
         if (!catNames[cat.id]) {
           setCatNames((prevCatNames) => ({
             ...prevCatNames,
             [cat.id]: randomCatName(),
           }));
         }
+        // Showing breed property if breed is existed.
         const breed =
           cat.breeds && cat.breeds.length > 0 ? cat.breeds[0] : null;
 
