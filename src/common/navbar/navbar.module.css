@@ -17,3 +17,7 @@
 .navbarImg {
   width: 2.5rem;
 }
+
+p {
+  font-family: var(--font-regular);
+}

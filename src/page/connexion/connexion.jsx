@@ -5,7 +5,7 @@ import CatShilhouette from "../../assets/img/catsilhouette.svg";
 import CatLogo from "../../assets/img/catlogo.svg";
 import styles from "../inscription/inscription.module.css";
 
-function Inscription() {
+function Connection() {
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -46,10 +46,10 @@ function Inscription() {
           onChange={handleInput}
         ></input>
         <button type="submit" className={styles.formSubmitButton}>
-          Sign in
-        </button>{" "}
-        <p>J'ai déjà un compte. </p>
-        <Link to="/connexion">Connexion</Link>
+          Log in
+        </button>
+        <p>Je n'ai pas un compte.</p>
+        <Link to="/inscription">Inscription</Link>
       </div>
       <div className={styles.formFooter}>
         <p>Kana FUJIHIRA - Simplon application CDA @2024</p>
@@ -63,4 +63,4 @@ function Inscription() {
   );
 }
 
-export default Inscription;
+export default Connection;
