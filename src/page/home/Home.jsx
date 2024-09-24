@@ -3,6 +3,7 @@ import Card from "../../common/card/Card";
 function Home() {
   return (
     <>
+      <button>Générer des chats</button>
       <Navbar />
       <Card />
     </>
