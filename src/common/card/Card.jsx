@@ -8,7 +8,8 @@ import styles from "../card/card.module.css";
 function Card() {
   // Initialize state as an empty object to track favorite status for each cat
   const [favorites, setFavorites] = useState({});
-
+  // Initialize state for storing random names for each cat
+  const [catNames, setCatNames] = useState({});
   // Toggle favorite status for a specific cat by its id
   const handleFavorite = (catId) => {
     setFavorites((prevFavorites) => ({
@@ -23,13 +24,34 @@ function Card() {
     <>
       {allCats.map((cat) => {
         // Generate a random name for each cat
-        const randomCat = randomCatName();
+        if (!catNames[cat.id]) {
+          setCatNames((prevCatNames) => ({
+            ...prevCatNames,
+            [cat.id]: randomCatName(),
+          }));
+        }
+        const breed =
+          cat.breeds && cat.breeds.length > 0 ? cat.breeds[0] : null;
 
         return (
           <div className={styles.cardContainer} key={cat.id}>
             <img src={cat.url} className={styles.catImageSize} alt={cat.id} />
             {/* Display the random name for each cat */}
-            <p className={styles.catName}>{randomCat}</p>
+            {breed ? (
+              <>
+                <p className={styles.catName}>Race : {breed.name}</p>
+                <p className={styles.catName}>Origine : {breed.origin}</p>
+                <p className={styles.catName}>
+                  Caractère : {breed.temperament}
+                </p>
+                <p className={styles.catName}>
+                  Poids: {breed.weight.metric} kg
+                </p>
+              </>
+            ) : (
+              <p>Breed information is not available</p>
+            )}
+            <p className={styles.catName}>Nom : {catNames[cat.id]}</p>
             {favorites[cat.id] ? (
               <img
                 onClick={() => handleFavorite(cat.id)}
