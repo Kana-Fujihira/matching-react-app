@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "SofadiOne-Regular";
+  src: url("../src/assets/font/SofadiOne-Regular.ttf") format("truetype");
+}
+
+:root {
+  --font-regular: "SofadiOne-Regular", sans-serif;
+  /* --font-bold: "Poppins Bold", sans-serif;
+  --font-black: "Poppins Black", sans-serif;
+  --main-color: #0f80a7;
+  --secondary-color: #cdecef;
+  --third-color: #f2f7f9;
+  --fourth-color: #d3ddea;
+  --background-color: white;
+  --text-color: Black; */
+}
+
 body {
   margin: 0;
   padding: 0;

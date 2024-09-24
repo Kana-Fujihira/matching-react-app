@@ -10,10 +10,24 @@
   margin: 1rem;
   border-radius: 30px;
 }
+
+.navbarContainerSmall{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbarTitle {
   font-size: 25px;
 }
 
 .navbarImg {
+  padding: 10px;
   width: 2.5rem;
+}
+
+p {
+  text-align: center;
+  font-family: var(--font-regular);
 }

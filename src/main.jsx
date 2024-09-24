@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./page/home/Home.jsx";
 import App from "./App.jsx";
 import Inscription from "./page/inscription/Inscription.jsx";
+import Connexion from "./page/connexion/connexion.jsx";
 import "./index.css";
 
 const API = import.meta.env.VITE_API_KEY;
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
           ),
       },
       { path: "/inscription", element: <Inscription /> },
-      // { path: "/connection", element: <Connection /> },
+      { path: "/connexion", element: <Connexion /> },
       // { path: "/account", element: <Account /> },
     ],
   },
