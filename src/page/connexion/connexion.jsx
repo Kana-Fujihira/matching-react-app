@@ -1,13 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import { Form, Link } from "react-router-dom";
+import { Form, Link,useNavigate } from "react-router-dom";
 import CatShilhouette from "../../assets/img/catsilhouette.svg";
 import CatLogo from "../../assets/img/catlogo.svg";
 import styles from "../inscription/inscription.module.css";
 
-const URL = import.meta.env.VITE_API_URL;
+
 
 function Connection() {
+const URL = import.meta.env.VITE_API_URL;
+const navigate = useNavigate();
+
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -23,7 +26,7 @@ function Connection() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(`${URL}/api/users`, {
+      const response = await fetch(`${URL}/api/login`, {
         method: "POST",
         headers: {
           "Contenct-Type": "application/json",
@@ -33,6 +36,9 @@ function Connection() {
           password: values.password,
         }),
       });
+      if (response.status === 200){
+        navigate("/");
+      }
     } catch (err) {
       console.log("Une erreur est survenue lors de l'inscription");
     }
