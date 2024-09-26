@@ -28,13 +28,13 @@ function Connection() {
         headers: {
           "Contenct-Type": "application/json",
         },
-        body: JSON.stringfy({
+        body: JSON.stringify({
           email: values.email,
           password: values.password,
         }),
       });
     } catch (err) {
-      notifyError("Une erreur est survenue lors de l'inscription");
+      console.log("Une erreur est survenue lors de l'inscription");
     }
   };
 

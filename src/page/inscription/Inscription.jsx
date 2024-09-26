@@ -5,6 +5,8 @@ import CatShilhouette from "../../assets/img/catsilhouette.svg";
 import CatLogo from "../../assets/img/catlogo.svg";
 import styles from "../inscription/inscription.module.css";
 
+const URL = import.meta.env.VITE_API_URL;
+
 function Inscription() {
   const [values, setValues] = useState({
     email: "",
@@ -24,9 +26,9 @@ function Inscription() {
       const response = await fetch(`${URL}/api/users`, {
         method: "POST",
         headers: {
-          "Contenct-Type": "application/json",
+          "Content-Type": "application/json", // Corrected typo
         },
-        body: JSON.stringfy({
+        body: JSON.stringify({
           email: values.email,
           password: values.password,
         }),
