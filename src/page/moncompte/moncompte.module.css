@@ -1,0 +1,16 @@
+.moncompteImage {
+  width: 60px;
+}
+
+.checkedImage,
+.buttonStarMoncompte {
+  width: 20px;
+}
+
+.moncompteContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}

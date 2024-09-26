@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.navbarContainer > a {
+  text-decoration: none;
+}
+
 .navbarImg {
   padding: 10px;
   width: 2.5rem;

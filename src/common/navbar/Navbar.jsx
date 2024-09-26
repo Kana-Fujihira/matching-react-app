@@ -13,9 +13,13 @@ function Navbar() {
           </Link>
           <p>Logout</p>
         </div>
-        <p className={styles.navbarTitle}>Catinder</p>
+        <Link to="/">
+          <p className={styles.navbarTitle}>Catinder</p>
+        </Link>
         <div className={styles.navbarContainerSmall}>
-          <img className={styles.navbarImg} src={Favorite} alt="accoutIcon" />
+          <Link to="/account">
+            <img className={styles.navbarImg} src={Favorite} alt="accoutIcon" />
+          </Link>
           <p>Mon compte</p>
         </div>
       </div>
