@@ -41,18 +41,17 @@ class UserRepository extends AbstractRepository {
     return rows;
   }
 
+  // Méthode pour lire un utilisateur spécifique par son pseudo, avec mot de passe
+  async readByemailWithPassword(email) {
+    // Exécute la requête SQL SELECT pour récupérer un utilisateur par son pseudo
+    const [rows] = await this.database.query(
+      `SELECT * FROM ${this.table} WHERE email = ?`,
+      [email]
+    );
 
-    // Méthode pour lire un utilisateur spécifique par son pseudo, avec mot de passe
-    async readByemailWithPassword(email) {
-      // Exécute la requête SQL SELECT pour récupérer un utilisateur par son pseudo
-      const [rows] = await this.database.query(
-        `SELECT * FROM ${this.table} WHERE email = ?`,
-        [email]
-      );
-  
-      // Retourne les lignes obtenues qui contiennent les détails de l'utilisateur
-      return rows;
-    }
+    // Retourne les lignes obtenues qui contiennent les détails de l'utilisateur
+    return rows;
+  }
 
   // The U of CRUD - Update operation
   // TODO: Implement the update operation to modify an existing user

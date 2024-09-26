@@ -14,6 +14,10 @@ const loginRouter = require("./login/router");
 
 router.use("/login", loginRouter);
 
+const catRouter = require("./cats/router");
+
+router.use("/cats", catRouter);
+
 /* ************************************************************************* */
 
 module.exports = router;

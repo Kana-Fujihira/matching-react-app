@@ -1,15 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import { Form, Link,useNavigate } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 import CatShilhouette from "../../assets/img/catsilhouette.svg";
 import CatLogo from "../../assets/img/catlogo.svg";
 import styles from "../inscription/inscription.module.css";
 
-
-
 function Connection() {
-const URL = import.meta.env.VITE_API_URL;
-const navigate = useNavigate();
+  const URL = import.meta.env.VITE_API_URL;
+  const navigate = useNavigate();
 
   const [values, setValues] = useState({
     email: "",
@@ -36,7 +34,7 @@ const navigate = useNavigate();
           password: values.password,
         }),
       });
-      if (response.status === 200){
+      if (response.status === 200) {
         navigate("/");
       }
     } catch (err) {

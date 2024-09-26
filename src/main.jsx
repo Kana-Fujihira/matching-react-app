@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: async () =>
           fetch(
-            `https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1&api_key=${API}`
+            `https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1&api_key=${API}`,
           ),
       },
       { path: "/inscription", element: <Inscription /> },
@@ -30,5 +30,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );
