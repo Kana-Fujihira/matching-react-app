@@ -1,0 +1,50 @@
+.formTitle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.formContainder {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-radius: 50px;
+}
+
+.formSubmitButton {
+  margin: 1rem;
+}
+
+.formImage {
+  width: 40px;
+}
+
+.formFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 20px;
+}
+h2,
+h3,
+p,
+a {
+  font-family: var(--font-regular);
+}
+
+button {
+  font-family: var(--font-regular);
+}
