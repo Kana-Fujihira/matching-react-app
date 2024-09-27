@@ -1,8 +1,15 @@
-# React + Vite
+# Application de mise en relation de chats et d'humains - 🐱 Catinder 🐱
+# Caractéristiques
+L'utilisateur peut s'inscrire/s'identifier avec le système de mot de passe hachadage. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Intégration de l'API du chat
 
-Currently, two official plugins are available:
+Parcourir des chats au hasard (nom, race, caractère, poids et origine) jusqu'à 10 en même temps .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mettre un favori sur chaque chat 
+
+# Développement futur 
+L'utilisateur peut faire une liste de ses chats préférés et la voir sur la page de son compte.
+
+L'utilisateur peut se déconnecter et conserver sa liste de favoris même après s'être déconnecté. 
+
