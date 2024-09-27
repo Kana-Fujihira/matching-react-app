@@ -20,9 +20,12 @@ L'utilisateur peut s'inscrire/signaler avec le système de mot de passe hachadag
 
 Intégration de l'API du chat (The Cat API).
 
+Afficher le contenu de l'API 
+
 Parcourir des chats au hasard (nom, race, caractère, poids et origine) jusqu'à 10 en même temps .
 
 Mettre un favori sur chaque chat (l'image fictive sur la page du compte aujourd'hui).
+
 
 # Développement futur 
 Inscription/signature séparée entre les personnes qui recherchent/éduquent des chats et SPA,élevages ou éleveurs privés.
