@@ -1,5 +1,5 @@
 # 🐱 Catinder 🐱
-# Application de mise en relation de chats et d'humains
+Application de mise en relation de chats et d'humains
 # Caractéristiques
 L'utilisateur peut s'inscrire/s'identifier avec le système de mot de passe hachadage. 
 
