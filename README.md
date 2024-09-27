@@ -1,5 +1,20 @@
 # 🐱 Catinder 🐱
 Application de mise en relation de chats et d'humains
+
+# Scénario
+
+C’est une application de mise en relation entre les personnes qui recherchent/éduquent des chats et SPA,élevages ou éleveurs privés.
+
+Il y a deux façons de se connecter en tant que vendeur ou en tant que acheteur ; 
+
+En tant que vendeur comme SPA,élevages ou éleveurs privés, ils peuvent enregistrer leurs chats avec le nom, l'âge, la race, les vaccins ou non, le prix et les informations de contact. 
+
+En tant que personne à la recherche de son futur animal, il peut enregistrer son nom, son adresse, son budget, son numéro de téléphone, sa carte d'identité (passeport, permis conduire etc.). 
+
+Cette personne peut également mettre ses chat préférés sur la liste et vérifier leur liste de favoris, puis les contacter par l'application. 
+
+Cette application facilite l'interaction entre le vendeur et le chercheur de chats et permet ainsi aux chats d'être hébergés et de retrouver leur propriétaire dès que possible. 
+
 # Caractéristiques
 L'utilisateur peut s'inscrire/s'identifier avec le système de mot de passe hachadage. 
 
